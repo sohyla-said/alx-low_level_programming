@@ -14,14 +14,17 @@ int main(void)
 
 	for (x = 0; x < 100; x++)
 	{
-		s = x / 10;
-		b = x % 10;
-		putchar(s + '0');
-		putchar(b + '0');
-		if (x != 99)
+		s = (x / 10) + '0';
+		b = (x % 10) + '0';
+		if (s != b )
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(s);
+			putchar(b);
+			if (x != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
