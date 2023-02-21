@@ -9,15 +9,11 @@
 int main(void)
 {
 	char word[9] = "_putchar";
-	int i = 0;
+	int i;
 
-	while(i < 9)
-	{
-		putchar(word[i]);
-		i++;
-	}
-	putchar('\n');
+	for (i = 0; i < 9; i++)
+		_putchar(word[i]);
+	_putchar('\n');
 
 	return (0);
-
 }
