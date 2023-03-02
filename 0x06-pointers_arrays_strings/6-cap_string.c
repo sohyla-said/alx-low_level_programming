@@ -25,15 +25,17 @@ char *cap_string(char *s)
 /**
  * check_separator - checks for separators of words
  * @c: an input
- * Retuen: integer
+ * Return: integer
  */
 int check_separator(char c)
 {
-	char sep[] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?'};
+	char sep2[] = {'"', '(', ')', '{', '}' };
 	int i;
+
 	for (i = 0; i < 13; i++)
 	{
-		if (c == sep[i])
+		if (c == sep[i] || c == sep2[i])
 			return (1);
 	}
 	return (0);
