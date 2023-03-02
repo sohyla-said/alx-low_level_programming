@@ -33,7 +33,7 @@ int check_separator(char c)
 	char sep2[] = {'"', '(', ')', '{', '}' };
 	int i;
 
-	for (i = 0; i < 13; i++)
+	for (i = 0; i < 8; i++)
 	{
 		if (c == sep[i] || c == sep2[i])
 			return (1);
