@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	int len = strlen(s), i, j;
-	char str1[] = {'a', 'A', 'e', 'E', 'o', 'O','t', 'T', 'l', 'L'};
+	char str1[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char sub[] = {'4', '4', '3', '3', '0', '0', '7', '7',  '1', '1'};
 
 	for (i = 0; i < len; i++)
@@ -17,7 +17,7 @@ char *leet(char *s)
 		for (j = 0; j < 10; j++)
 		{
 			if (s[i] == str1[j])
-				s[i] = sub [j];
+				s[i] = sub[j];
 		}
 	}
 	return (s);
